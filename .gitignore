@@ -4,3 +4,4 @@ test-results/
 
 .idea/
 playwright-report/
+.DS_Store
