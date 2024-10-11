@@ -9,7 +9,8 @@ test('Simple Assertions', async()=>{
 test('test with simple auto-retrying assertion', async({page})=>{
 
     await page.goto('http://localhost:3000');
-    await expect(page.getByText('Register')).toContainText('Register');
-    
+    //await expect(page.getByText('Register')).toContainText('Register');
+    await expect(page.getByTestId('location')).toContainText('You are visiting us from New York');
+    expect (page).toHaveTitle('Credit Association');
 
 });
