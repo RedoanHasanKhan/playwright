@@ -11,4 +11,5 @@ test('browser storage', async({page})=>{
     const storage = await page.context().storageState();
     console.log(storage.cookies);
     console.log(storage.origins[0].localStorage);
-})
+});
+
