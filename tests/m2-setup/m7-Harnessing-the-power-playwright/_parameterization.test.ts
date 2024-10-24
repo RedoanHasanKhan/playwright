@@ -1,5 +1,8 @@
 import {expect, test} from '@playwright/test'
 
+
+test.describe.configure({mode:'parallel'});
+
 const input = [
     ["10", "6 months", "After 6 Months you will earn $0.20 on your deposit"],
     ["20", "1 Year", "After 1 Year you will earn $1.00 on your deposit"]
